@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Ocean</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Welcome to my paradise</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">help</a></li>
+
+    </ul>
+  </header>
+  <section>
+    <img src="images/stars.png" id="stars">
+    <img src="images/moon.png" id="moon">
+    <img src="images/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">bless you</h2>
+    <a href="#sec" id="btn">Explore</a>
+    <img src="images/mountains_front.png" id="mountains_front">
+  </section>
+  <div class="sec" id="sec">
+    <h2>Welcome to Ocean Paradise</h2>
+    <p><br>Dear Friend:</br>
+May this letter bring you my sincere blessings and greetings.
+<br>Do you remember that on a windy day, an ordinary you unintentionally saved a dying little fish? That little fish, insignificant as it was, carried the secret of destiny and led you to a world full of fantasy and adventure.</br>
+Now, I have the honor to extend this invitation to you, inviting you to a mysterious place called "Ocean Paradise". There, the blue waves and coral colorful, as if it is an isolated fairyland. However, the paradise not only contains treasures that countless people have dreamed of, but also hides unknown crises and challenges.
+Your good deeds have been favored by the ocean. You have been chosen to be the lucky winner of this journey. I believe that your bravery and wisdom will shine brightly on this journey, overcoming all difficulties and obtaining the freedom and treasures you desire.
+Please get ready to embark on this journey full of fantasy and adventure. No matter how many difficulties and obstacles lie ahead, as long as you have faith in your heart and go forward, you will surely be able to find your own treasure.
+May you not only find the treasures you want, but also gain an unforgettable life experience in the journey of "Ocean Paradise". We look forward to your arrival to witness this wonderful adventure together.</br>
+<br>
+      <br>Yours sincerely
+    </p>
+      <p2>
+        lili
+        </p2>
+
+  </div>
+
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind = document.getElementById('mountains_behind')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let mountains_front = document.getElementById('mountains_front')
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px'
+      moon.style.top = value * 1.05 + 'px'
+      mountains_behind.style.top = value * 0.5 + 'px'
+      mountains_front.style.top = value * 0 + 'px'
+      text.style.marginRight = value * 4 + 'px'
+      text.style.marginTop = value * 1.5 + 'px'
+      btn.style.marginTop = value * 1.5 + 'px'
+      header.style.top = value * 0.5 + 'px'
+    })
+  </script>
+
+
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fullscreen-image {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+  <img src="oc.png" alt="全屏图片" class="fullscreen-image">
+</body>
+
+
+
+  <style>
+    .container {
+      margin-left: 80px;
+    }
+
+    .button-large {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+  </style>
+
+  <div class="container">
+    <h3 id="demo" style="color: white; margin-top: 20px; font-size: 40px;">In what identity will you choose to come to Ocean Paradise?</h3>
+    <button onclick="sayHello()" class="button-large">Your answer</button>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
