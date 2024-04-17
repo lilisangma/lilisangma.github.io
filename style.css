@@ -11,7 +11,7 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(#27bcdf,#7597de);
+  background: linear-gradient(#7597de,#7597de);
 }
 
 header {
@@ -134,6 +134,7 @@ section img#mountains_front {
 }
 
 .sec p {
+  font-family:Arial,Unicode,MS,serif;
   font-size: 1em;
   color: #fff;
 }
@@ -141,4 +142,36 @@ section img#mountains_front {
 .sec p2 {
   font-size: 1em;
   color: #fff;
+}
+
+
+.image-container {
+  display: grid; /* 设置容器为grid布局 */
+  place-items: center; /* 同时设置水平和垂直居中 */
+}
+
+/* 你可以在这里添加针对图片的样式，如果需要的话 */
+.image-container img {
+  place-items: center;/* 图片现在会在容器中居中 */
+  /* 例如，你可以设置图片的宽度或高度 */
+  width: 600px; /* %E7%A4%BA%E4%BE%8B%E5%AE%BD%E5%BA%A6 */
+  height: 600px; /* %E7%A4%BA%E4%BE%8B%E9%AB%98%E5%BA%A6 */
+  max-width: 100%; /* 确保图片不会超出容器宽度 */
+  height: auto; /* 保持图片的原始纵横比 */
+  transform: translate(0px, 100px);
+}
+
+.image-container img {
+  /* 图片现在会在容器中居中 */
+}
+
+.wz {
+  position: relative;
+  padding: 100px;
+  font-family: "华文仿宋", STFangsong, STSong, SimSun, serif;
+  display: grid;
+  place-items: center; /* 同时实现水平和垂直居中 */
+  transform: translate(0px, 100px);
+  height: 100%; /* 确保容器有高度 */
+  color: #ffffff;
 }
